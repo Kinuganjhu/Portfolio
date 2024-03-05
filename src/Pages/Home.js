@@ -1,10 +1,17 @@
 import Skills from './Skills';
 import Projects from './Projects';
 import { Button } from 'react-bootstrap';
-
+import logo from './IMG_20231108_164902.jpg'
+import {useState} from 'react';
 export default function Home() {
+  const[dark,setDark] = useState(true);
+  const handleDark =()=>{
+    setDark(!dark);
+  }
   return (
-    <>
+    <div className ={dark ? 'light-mode': 'dark-mode'}>
+    <img src ={logo}alt ='kinu ganjhu' className='header-image'/>
+    <Button onClick ={handleDark}>{dark?'light mode': 'dark mode'}</Button>
       <h1>Hi, I'm Kinu Ganjhu<span className ='wave'>👋</span></h1>
      
       <h5>JUNIOR FRONTEND DEVELOPER</h5>
@@ -16,6 +23,6 @@ export default function Home() {
       <br />
       <Skills />
       <Projects />
-    </>
+    </div>
   );
 }

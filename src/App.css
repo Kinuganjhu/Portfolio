@@ -1,15 +1,20 @@
 
 *{
  margin: 10px; 
-  }
-.light-mode{
+}
+
+.light-mode {
+  background: white;
   color: black;
-  background-color: white;
+  transition: 5s;
 }
-.dark-mode{
-  color: white;
-  background-color: black;
+
+.dark-mode {
+  transition: 5s;
+  background: linear-gradient(to bottom right, #000000, #b7e2b1); /* Gradient from black to light green */
+  color: white; /* Text color for better readability */
 }
+
   .container {
   display: grid;
   grid-template-columns: repeat(3, 1fr); /* 3 columns */
@@ -91,7 +96,7 @@
 
 .wave {
   animation-name: wave-animation;  /* Refers to the name of your @keyframes element below */
-  animation-duration: 2s;        /* Change to speed up or slow down */
+  animation-duration: 1s;        /* Change to speed up or slow down */
   animation-iteration-count: infinite;  /* Never stop waving :) */
   transform-origin: 70% 70%;       /* Pivot around the bottom-left palm */
   display: inline-block;
@@ -114,6 +119,14 @@
 /* For demonstration purposes only: */
 body { font-size: 3.5em }
 h1 { font-size: 0.5em }
+.header-image {
+  display: block;
+  margin: auto;
+  max-width: 100%;
+  height: auto;
+  border-radius: 50%;
+
+}
 
 
 
