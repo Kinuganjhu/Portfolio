@@ -32,7 +32,7 @@ const Project = () => {
       {/* Modal */}
       <Modal show={showModal} onHide={closeModal}
       className='info'
-     placement='bottom'
+     
       >
         <Modal.Header closeButton>
           <Modal.Title>{selectedItem ? selectedItem.title : ''}</Modal.Title>

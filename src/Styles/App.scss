@@ -8,6 +8,7 @@ body {
 }
 .header-item{
  > h1,h3{
+   margin: $Margin;
    color: white;
  }
 }
@@ -54,4 +55,7 @@ background-color: rgba(54,53,67,255);
 .info{
   color: white;
 }
-
+.Btn{
+  margin: $Margin;
+  color: white;
+}

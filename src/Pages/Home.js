@@ -13,11 +13,12 @@ const Home =()=>{
       </h3>
       <h1>Junior Frontend Developer</h1>
       <br/>
-      <Button
-      variant ='light'
-      style={{
-       color: 'white', backgroundColor: 'rgb(37, 150, 190)'
-      }}>Download CV</Button>
+<a href="https://drive.google.com/file/d/1KAsSx7KjdYEZ8Ns21nHkGvDvOefy-M1_/view" target="_blank" rel="noopener noreferrer">
+  <Button variant="light" className="Btn">
+    Download CV
+  </Button>
+</a>
+
       </div>
       <Social/>
     <Project/>
