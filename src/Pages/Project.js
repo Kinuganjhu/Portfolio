@@ -19,12 +19,13 @@ const Project = () => {
   return (
     <>
       <div className='container'>
-        <h1>My Portfolio</h1>
+        <h1 className='Skills'>My Portfolio</h1>
         {Data.map((item) => (
           <div key={item.id} className='item'>
             <img src={item.logo} alt={item.title} />
             <h6>{item.title}</h6>
-            <Button variant='link' onClick={() => openModal(item)}>View</Button>
+            <Button variant='link' onClick={() => openModal(item)}
+           >View</Button>
           </div>
         ))}
       </div>

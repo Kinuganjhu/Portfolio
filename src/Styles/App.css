@@ -6,7 +6,19 @@ body {
   margin: 10px;
 }
 
-.header-item > h1, .header-item h3 {
+.header-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+
+.header-item img {
+  display: block;
+}
+
+.header-item h1, .header-item h3 {
   margin: 10px;
   color: white;
 }
@@ -34,20 +46,14 @@ body {
   background-color: #363543;
 }
 
-.container > h1 {
-  color: white;
-  text-align: center;
-  border-bottom: 1px solid #2596be;
-  border-width: 1px;
-}
-
 .item {
   margin: 10px;
 }
 
 .item > img {
+  border-radius: 4px;
   width: 100%;
-  height: 250px;
+  height: auto;
 }
 
 .item > h6 {
@@ -62,4 +68,41 @@ body {
 .Btn {
   margin: 10px;
   color: white;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  justify-items: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.skills-grid img {
+  padding: 10px;
+  border: 1px solid #2596be;
+  width: 80px;
+  height: auto;
+}
+
+.skills-grid .placeholder {
+  visibility: hidden;
+}
+
+.Skills {
+  color: white;
+  text-align: center;
+  position: relative;
+}
+
+.Skills::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 160px;
+  height: 2px;
+  background-color: #2596be;
 }
