@@ -1,10 +1,11 @@
+import './Styles/App.css'
 import {
   Routes,
   Route
 } from 'react-router-dom';
 
 import Home from './Pages/Home';
-import './App.css';
+
 export default function App() {
  return (
     <div>
