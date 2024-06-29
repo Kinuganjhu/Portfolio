@@ -1,24 +1,31 @@
-import Web from '../Icons/Web.svg';
-import GitHub from '../Icons/Github.svg';
-import Linkedin from '../Icons/LinkedIn.svg';
+import WebIcon from '../Icons/Web.svg';
+import GitHubIcon from '../Icons/Github.svg';
+import LinkedinIcon from '../Icons/LinkedIn.svg';
+import GmailIcon from '../Icons/Gmail.svg';
 
 const Data = [
   {
     id: 1,
-    logo: Linkedin,
+    logo: LinkedinIcon,
     link: 'https://www.linkedin.com/in/kinu-ganjhu-ba38b2275',
   },
   {
     id: 2,
-    logo: GitHub,
+    logo: GitHubIcon,
     link: 'http://github.com/Kinuganjhu',
   },
   {
     id: 3,
-    logo: Web,
+    logo: WebIcon,
     link: 'https://kinuganjhu99.blogspot.com',
   },
+  {
+    id: 4,
+    logo: GmailIcon,
+    link: 'mailto:kinuganjhu02@gmail.com',
+  }
 ];
+
 const Social = () => {
   return (
     <div className="social-links">
@@ -30,4 +37,5 @@ const Social = () => {
     </div>
   );
 };
+
 export default Social;
