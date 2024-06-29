@@ -48,7 +48,7 @@ background-color: rgba(54,53,67,255);
   margin: $Margin;
   
   >img{
-    border-radius: 4px;
+    
     width: 100%;
     height: auto;
   }
@@ -59,6 +59,9 @@ background-color: rgba(54,53,67,255);
 }
 .info{
   color: white;
+  a{
+    color: rgb(37, 150, 190);
+  }
 }
 .Btn{
   margin: $Margin;
@@ -98,4 +101,13 @@ background-color: rgba(54,53,67,255);
   width: 160px;
   height: 2px;
   background-color: rgb(37, 150, 190);
+}
+.Details{
+  border: 1px solid #ccc;
+  background-color: #383444;
+  padding: 16px;
+  b{
+    color: white;
+  }
+
 }
