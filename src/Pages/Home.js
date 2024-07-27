@@ -2,7 +2,7 @@ import Social from './Social.js'
 import Project from './Project'
 import Skills from './Skills'
 import {Button} from 'react-bootstrap'
-import logo from './profile.png'
+import logo from './IMG_20231123_091434-removebg-preview (1).png'
 const Home =()=>{
   return(
     <>
