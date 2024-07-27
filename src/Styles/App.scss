@@ -13,7 +13,10 @@ body {
   align-items: center;
   height: 80vh;  
   img {
-    display: block; 
+    
+      height: 250px;
+      width: 250px;
+      border-radius: 50%;
   }
   
   h1, h3 {
