@@ -9,7 +9,7 @@ const Home =()=>{
       
       <div className='header-item'>
    
-     <img src ={logo}alt ='profile.png' className='logo'/> 
+     <img src ={logo}alt ='profile.png'/> 
       <h3>Hii, I'm Kinu Ganjhu
       </h3>
       <h1>Junior Frontend Developer
