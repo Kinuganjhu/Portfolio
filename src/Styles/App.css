@@ -15,7 +15,10 @@ body {
 }
 
 .header-item img {
-  display: block;
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+  margin: 0 auto;
 }
 
 .header-item h1, .header-item h3 {

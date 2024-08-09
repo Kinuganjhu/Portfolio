@@ -2,14 +2,14 @@ import Social from './Social.js'
 import Project from './Project'
 import Skills from './Skills'
 import {Button} from 'react-bootstrap'
-import logo from './IMG_20231123_091434-removebg-preview (1).png'
+import logo from '../Images/profile.jpg'
 const Home =()=>{
   return(
     <>
       
       <div className='header-item'>
-   
-     <img src ={logo}alt ='profile.png'/> 
+   <img src ={logo} alt='profile.jpg'/>
+     
       <h3>Hii, I'm Kinu Ganjhu
       </h3>
       <h1>Junior Frontend Developer
