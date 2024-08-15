@@ -1,12 +1,13 @@
-import Box from '../Images/Box-office.jpg' 
-import Ecommerce from '../Images/E-commerce.jpg'
-import Tic from '../Images/tic-tac-toe.jpg'
-import Firebase from '../Images/firebase-tutorial.jpg'
+import Box from '../Images/Box-office.jpg';
+import Ecommerce from '../Images/E-commerce.jpg';
+import Tic from '../Images/tic-tac-toe.jpg';
+import Firebase from '../Images/firebase-tutorial.jpg';
+
 const Data = [
   {
     id: 0,
     title: 'Box Office App',
-   logo: Box,
+    logo: Box,
     description: "It's designed to showcase box office information, providing users with details about movies, their ratings, earnings, and more.",
     Github: 'https://github.com/Kinuganjhu/Box-Office',
     url: 'https://effulgent-lebkuchen-df2ddd.netlify.app/'
@@ -17,7 +18,7 @@ const Data = [
     logo: Ecommerce,
     description: 'This web application is designed to provide users with a seamless shopping experience. With dynamic routes for shopping options and Google authentication, users can easily browse, select, and purchase items hassle-free.',
     Github: 'https://github.com/Kinuganjhu/Authentic-Store',
-    url: 'https://kaleidoscopic-basbousa-569b13.netlify.app/'
+    url: 'https://deluxe-kringle-43df02.netlify.app'
   },
   {
     id: 2,
@@ -32,8 +33,9 @@ const Data = [
     title: 'Firebase Tutorial',
     logo: Firebase,
     description: 'Check out my project built with Firebase! This web application showcases my proficiency in Firebase services, including real-time database, authentication, and hosting. Explore the live demo here and dive into the code to see how Firebase powers this project.',
-    Github: 'https://github.com/Kinuganjhu/firebase-tutorial',
-    url: 'https://kaleidoscopic-basbousa-569b13.netlify.app/'
+    Github: 'https://github.com/Kinuganjhu/Firebase-Realtime-messeging-and-storage',
+    url: 'https://zingy-pasca-de7bf5.netlify.app/'
   }
 ];
+
 export default Data;
