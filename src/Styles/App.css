@@ -12,6 +12,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 80vh;
+  text-align: center;
 }
 
 .header-item img {
@@ -21,7 +22,7 @@ body {
   margin: 0 auto;
 }
 
-.header-item h1, .header-item h3 {
+.header-item h1, .header-item h3, .header-item h5 {
   margin: 10px;
   color: white;
 }
@@ -40,7 +41,7 @@ body {
   padding: 5px;
 }
 
-.social-links img {
+.social-links a img {
   width: 40px;
   height: 40px;
 }
@@ -53,12 +54,12 @@ body {
   margin: 10px;
 }
 
-.item > img {
+.item img {
   width: 100%;
   height: auto;
 }
 
-.item > h6 {
+.item h6 {
   padding-top: 12px;
   color: white;
 }
@@ -121,4 +122,12 @@ body {
 
 .Details b {
   color: white;
+}
+
+.Education {
+  border-radius: 4px;
+  padding: 16px;
+  margin: 10px;
+  color: white;
+  border: 1px dotted #2596be;
 }

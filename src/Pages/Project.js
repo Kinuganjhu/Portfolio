@@ -39,7 +39,7 @@ const Project = () => {
       <Offcanvas show={showOffcanvas} onHide={closeOffcanvas} className='info' placement='bottom'>
         <Offcanvas.Header
         className='info'
-        >
+      closeButton  >
           <Offcanvas.Title>{selectedItem ? selectedItem.title : ''}</Offcanvas.Title>
         </Offcanvas.Header>
         <Offcanvas.Body className='info'>

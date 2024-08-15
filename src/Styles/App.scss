@@ -1,7 +1,13 @@
+
+
 $Margin: 10px;
+$MainColor: rgb(37, 150, 190);
+$BackgroundColor: #363543;
+$ContainerColor: #383444;
+$TextColor: white;
 
 * {
-  background-color: #363543;
+  background-color: $BackgroundColor;
 }
 
 body {
@@ -14,18 +20,17 @@ body {
   justify-content: center;
   align-items: center;
   height: 80vh;
-
+text-align: center;
   img {
     height: 300px;
     width: 300px;
     border-radius: 50%;
     margin: 0 auto;
-    
   }
 
-  h1, h3 {
+  h1, h3,h5 {
     margin: $Margin;
-    color: white;
+    color: $TextColor;
   }
 }
 
@@ -37,49 +42,49 @@ body {
 
   a {
     display: inline-block;
-    border: 2px solid rgb(37, 150, 190);
+    border: 2px solid $MainColor;
     border-radius: 50%;
     padding: 5px;
-  }
 
-  img {
-    width: 40px;
-    height: 40px;
+    img {
+      width: 40px;
+      height: 40px;
+    }
   }
 }
 
 .container {
-  background-color: rgba(54, 53, 67, 255);
+  background-color: $BackgroundColor;
 }
 
 .item {
   margin: $Margin;
 
-  > img {
+  img {
     width: 100%;
     height: auto;
   }
 
-  > h6 {
+  h6 {
     padding-top: 12px;
-    color: white;
+    color: $TextColor;
   }
 }
 
 .info {
-  color: white;
+  color: $TextColor;
 
   a {
-    color: rgb(37, 150, 190);
+    color: $MainColor;
   }
 }
 
 .Btn {
   margin: $Margin;
-  color: white;
+  color: $TextColor;
 }
 
-// Skills.js;
+// Skills.js
 .skills-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -90,7 +95,7 @@ body {
 
   img {
     padding: $Margin;
-    border: 1px solid rgb(37, 150, 190);
+    border: 1px solid $MainColor;
     width: 80px;
     height: auto;
   }
@@ -101,7 +106,7 @@ body {
 }
 
 .Skills {
-  color: white;
+  color: $TextColor;
   text-align: center;
   position: relative;
 
@@ -113,18 +118,24 @@ body {
     transform: translateX(-50%);
     width: 160px;
     height: 2px;
-    background-color: rgb(37, 150, 190);
+    background-color: $MainColor;
   }
 }
 
 .Details {
   border: 1px solid #ccc;
-  background-color: #383444;
+  background-color: $ContainerColor;
   padding: 16px;
 
   b {
-    color: white;
+    color: $TextColor;
   }
 }
-
-
+//Education.js
+.Education{
+  border-radius: 4px;
+  padding: $Margin + 6px;
+  margin: $Margin;
+  color: white;
+  border: 1px dotted $MainColor;
+}
