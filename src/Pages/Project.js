@@ -18,7 +18,7 @@ const Project = () => {
   return (
     <>
       <div className='container'>
-        <h1 className='Skills'>My Portfolio</h1>
+        <h1 className='Skills'>My Projects</h1>
         {Data.map((item) => (
           <div key={item.id} className='item'>
             <img src={item.logo} alt={item.title} />
