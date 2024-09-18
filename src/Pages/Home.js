@@ -16,7 +16,7 @@ const Home =()=>{
       <h5>Aspiring Frontend Developer | Open to New Opportunities & Internships
       </h5>
       <br/>
-<a href="https://drive.google.com/file/d/1HaKIKOYM775JxvRsIcbOji3aGBX6aiiJ/view?usp=drivesdk" target="_blank" rel="noopener noreferrer">
+<a href="https://drive.google.com/file/d/1MZc4Fqc6XCZmaobLABjma7WsvBSzn6Pf/view?usp=drivesdk" target="_blank" rel="noopener noreferrer">
   <Button variant="light" className="Btn">
     Download CV
   </Button>
