@@ -3,7 +3,7 @@ import Project from './Project'
 import Skills from './Skills'
 import Education from './Education'
 import {Button} from 'react-bootstrap'
-import logo from '../Images/profile.jpg'
+import logo from '../Images/Profile.png'
 const Home =()=>{
   return(
     <>

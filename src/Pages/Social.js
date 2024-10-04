@@ -2,7 +2,7 @@ import WebIcon from '../Icons/Web.svg';
 import GitHubIcon from '../Icons/Github.svg';
 import LinkedinIcon from '../Icons/LinkedIn.svg';
 import GmailIcon from '../Icons/Gmail.svg';
-
+import freelancer from '../Icons/freelancer.svg'
 const Data = [
   {
     id: 1,
@@ -23,6 +23,10 @@ const Data = [
     id: 4,
     logo: GmailIcon,
     link: 'mailto:kinuganjhu02@gmail.com',
+  },{
+    id:5,
+    logo: freelancer,
+    link: ' https://www.freelancer.in/u/KinuGanjhu'
   }
 ];
 
