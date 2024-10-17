@@ -2,6 +2,7 @@ import Box from '../Images/Box-office.jpg';
 import Ecommerce from '../Images/E-commerce.jpg';
 import Tic from '../Images/tic-tac-toe.jpg';
 import Firebase from '../Images/firebase-tutorial.jpg';
+import Ninja from '../Images/Screenshot_20241017_112223.jpg';
 
 const Data = [
   {
@@ -14,6 +15,14 @@ const Data = [
   },
   {
     id: 1,
+    title: '91Ninja - A Personal Chatroom for Developers',
+    logo: Ninja,
+    description: '91ninja is a real-time chatroom for developers to instantly create and join chat rooms for seamless communication and collaboration.',
+    Github: 'https://github.com/Kinuganjhu/Chat-App',
+    url: 'https://kinuganjhu.netlify.app'
+  },
+  {
+    id: 2,
     title: 'E-Commerce Store',
     logo: Ecommerce,
     description: 'This web application is designed to provide users with a seamless shopping experience. With dynamic routes for shopping options and Google authentication, users can easily browse, select, and purchase items hassle-free.',
@@ -21,7 +30,7 @@ const Data = [
     url: 'https://deluxe-kringle-43df02.netlify.app'
   },
   {
-    id: 2,
+    id: 3,
     title: 'Tic Tac Toe',
     logo: Tic,
     description: 'This is a simple implementation of the classic Tic Tac Toe game developed using React. It was built during my training at Internshala Training and follows the standard rules of the game.',
@@ -29,7 +38,7 @@ const Data = [
     url: 'https://ticker-game.netlify.app/'
   },
   {
-    id: 3,
+    id: 4,
     title: 'Firebase Tutorial',
     logo: Firebase,
     description: 'Check out my project built with Firebase! This web application showcases my proficiency in Firebase services, including real-time database, authentication, and hosting. Explore the live demo here and dive into the code to see how Firebase powers this project.',
