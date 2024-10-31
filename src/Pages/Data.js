@@ -2,7 +2,7 @@ import Box from '../Images/Box-office.jpg';
 import Ecommerce from '../Images/E-commerce.jpg';
 import Tic from '../Images/tic-tac-toe.jpg';
 import Firebase from '../Images/firebase-tutorial.jpg';
-import Ninja from '../Images/Screenshot_20241017_112223.jpg';
+import Ninja from '../Images/Screenshot_2024-10-31-20-41-48-63.jpg';
 
 const Data = [
   {
