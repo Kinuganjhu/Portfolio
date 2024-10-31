@@ -15,11 +15,11 @@ const Data = [
   },
   {
     id: 1,
-    title: '91Ninja - A Personal Chatroom for Developers',
+    title: 'Chatophy - A Personal Chatroom for Developers',
     logo: Ninja,
-    description: '91ninja is a real-time chatroom for developers to instantly create and join chat rooms for seamless communication and collaboration.',
+    description: 'Chatophy is a real-time chatroom for developers to instantly create and join chat rooms for seamless communication and collaboration.',
     Github: 'https://github.com/Kinuganjhu/Chat-App',
-    url: 'https://kinuganjhu.netlify.app'
+    url: 'https://chatophy.netlify.app'
   },
   {
     id: 2,
