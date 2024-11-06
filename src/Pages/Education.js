@@ -11,7 +11,7 @@ const Education = () => {
         <h3>Bachra High School, Chatra, Jharkhand 829201</h3>
         <p>Intermediate of Commerce</p>
         <time dateTime="2021-2023">2021-2023</time>
-        <p><strong>64.80%</strong></p>
+        <p><strong>65%</strong></p>
         <a href={certificateUrl} target="_blank" rel="noopener noreferrer" aria-label="View certificate from Bachra High School">
           <Button variant="light">
             View Certificate
