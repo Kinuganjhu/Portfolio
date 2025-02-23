@@ -1,0 +1,116 @@
+body {
+  background-color: #ccc;
+  color: #333;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Dark mode styles */
+body.dark-mode {
+  background-color: #0f172a;
+  color: #fff;
+}
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  height: 100vh;
+  padding-top: 50px;
+}
+
+.profile {
+  width: 300px;
+  height: auto;
+  border-radius: 50%;
+  border: 3px solid white;
+  /* Clean inner border only */
+}
+
+.text-content {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.text-content h2 {
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+
+.text-content p {
+  font-size: 18px;
+  color: #666;
+}
+
+.text-content .cv-button {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.text-content .cv-button:hover {
+  background-color: gray;
+}
+
+/* Icon styles with drop shadow in dark mode */
+.icon {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 40px;
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  filter: drop-shadow(2px 2px 4px rgba(255, 255, 255, 0.6));
+  /* White drop shadow */
+}
+
+.icon:hover {
+  transform: scale(1.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .profile {
+    width: 250px;
+  }
+  .text-content h2 {
+    font-size: 20px;
+  }
+  .text-content p {
+    font-size: 16px;
+  }
+  .text-content .cv-button {
+    padding: 8px 16px;
+  }
+  .icon {
+    width: 35px;
+  }
+}
+
+@media (max-width: 480px) {
+  .profile {
+    width: 210px;
+  }
+  .text-content h2 {
+    font-size: 18px;
+  }
+  .text-content p {
+    font-size: 14px;
+  }
+  .text-content .cv-button {
+    padding: 6px 12px;
+  }
+  .icon {
+    width: 30px;
+    filter: drop-shadow(1px 1px 3px rgba(255, 255, 255, 0.6));
+    /* Softer shadow for small screens */
+  }
+}

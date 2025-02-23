@@ -1,0 +1,134 @@
+.project-container {
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.project-container .project-title {
+  font-size: 20px;
+  margin-bottom: 1.5rem;
+  font-weight: bold;
+}
+
+.project-container .project-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.project-container .project-card:hover {
+  transform: translateY(-5px);
+}
+
+.project-container .project-card .project-img {
+  width: 100%;
+  height: 200px;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+.custom-button {
+  background: black;
+  color: white;
+  font-weight: bold;
+  padding: 12px 25px;
+  border-radius: 50px;
+  text-align: center;
+  display: inline-block;
+  text-decoration: none;
+  border: 2px solid black;
+  transition: all 0.3s ease-in-out;
+  font-size: 1rem;
+}
+
+.custom-button:hover {
+  background: white;
+  color: black;
+}
+
+.custom-button.view-details, .custom-button.live-demo {
+  background: black;
+  color: white;
+  border: 2px solid black;
+}
+
+.custom-button.view-details:hover, .custom-button.live-demo:hover {
+  background: white;
+  color: black;
+}
+
+.custom-button.github {
+  background: white;
+  color: black;
+  border: 2px solid black;
+}
+
+.custom-button.github:hover {
+  background: white;
+  color: black;
+}
+
+.offcanvas-body {
+  text-align: center;
+}
+
+.offcanvas-body p {
+  font-size: 16px;
+  margin-bottom: 1rem;
+}
+
+.offcanvas-body .project-links {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.offcanvas-body .project-links .custom-button {
+  flex: 1;
+}
+
+body.dark-mode .project-card {
+  background: #1e1e1e;
+  color: white;
+}
+
+body.dark-mode .custom-button {
+  background: white;
+  color: black;
+}
+
+body.dark-mode .custom-button:hover {
+  background: grey;
+}
+
+body.dark-mode .offcanvas-body {
+  background: #1e1e1e;
+  color: white;
+}
+
+body.dark-mode .view-details,
+body.dark-mode .live-demo {
+  background: white;
+  color: black;
+}
+
+body.dark-mode .view-details:hover,
+body.dark-mode .live-demo:hover {
+  background: black;
+  color: white;
+}
+
+body.dark-mode .github {
+  background: black;
+  color: white;
+  border: 2px solid white;
+}
+
+body.dark-mode .github:hover {
+  background: black;
+  color: white;
+}

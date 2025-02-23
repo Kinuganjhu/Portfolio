@@ -1,56 +1,53 @@
-import React, { useState } from 'react';
-import Data from './Data'; 
-import { Button, Offcanvas } from 'react-bootstrap';
+import { useState } from "react";
+import { Container, Row, Col, Button, Offcanvas } from "react-bootstrap";
+import Data from "../Pages/Data.js";
+import "../Styles/Project.scss";
 
 const Project = () => {
-  const [showOffcanvas, setShowOffcanvas] = useState(false);
-  const [selectedItem, setSelectedItem] = useState(null);
+  const [show, setShow] = useState(false);
+  const [selectedProject, setSelectedProject] = useState(null);
 
-  const openOffcanvas = (item) => {
-    setSelectedItem(item);
-    setShowOffcanvas(true);
-  };
-
-  const closeOffcanvas = () => {
-    setShowOffcanvas(false);
+  const handleClose = () => setShow(false);
+  const handleShow = (project) => {
+    setSelectedProject(project);
+    setShow(true);
   };
 
   return (
-    <>
-      <div className='container'>
-        <h1 className='Skills'>My Projects</h1>
-        {Data.map((item) => (
-          <div key={item.id} className='item'>
-            <img src={item.logo} alt={item.title} />
-            <div className='Details'>
-              <b>{item.title}</b>
-              <Button 
-                variant='link'
-                onClick={() => openOffcanvas(item)}
-              >
-                View
-              </Button>
-            </div>
-          </div>
+    <Container className="project-container">
+      <h2 className="project-title">Projects</h2>
+      <Row>
+        {Data.map((project) => (
+          <Col key={project.id} xs={12} md={4} className="project-card">
+            <img src={project.logo} alt={project.title} className="project-img" />
+            <h5 className="project-title">{project.title}</h5>
+            <Button
+            variant ='outline-dark'
+            className="custom-button view-details" onClick={() => handleShow(project)}>
+              View Details
+            </Button>
+          </Col>
         ))}
-      </div>
+      </Row>
 
-      {/* Offcanvas */}
-      <Offcanvas show={showOffcanvas} onHide={closeOffcanvas} className='info' placement='bottom'>
-        <Offcanvas.Header
-        className='info'
-      closeButton  >
-          <Offcanvas.Title>{selectedItem ? selectedItem.title : ''}</Offcanvas.Title>
+      {/* OffCanvas for Project Details */}
+      <Offcanvas show={show} onHide={handleClose} placement="bottom">
+        <Offcanvas.Header closeButton>
+          <Offcanvas.Title>{selectedProject?.title}</Offcanvas.Title>
         </Offcanvas.Header>
-        <Offcanvas.Body className='info'>
-          {selectedItem ? selectedItem.description : ''}
-          <br />
-          <a href={selectedItem ? selectedItem.Github : '#'}>GitHub &rarr;</a>
-          <br />
-          <a href={selectedItem ? selectedItem.url : '#'}>Live Preview &rarr;</a>
+        <Offcanvas.Body>
+          <p>{selectedProject?.description}</p>
+          <div className="project-links">
+            <a href={selectedProject?.url} target="_blank" rel="noopener noreferrer" className="custom-button live-demo">
+              Live Demo
+            </a>
+            <a href={selectedProject?.Github} target="_blank" rel="noopener noreferrer" className="custom-button github">
+              GitHub
+            </a>
+          </div>
         </Offcanvas.Body>
       </Offcanvas>
-    </>
+    </Container>
   );
 };
 

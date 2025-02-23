@@ -1,0 +1,71 @@
+.education-container {
+  text-align: center;
+  margin-top: 20px;
+  padding: 0;
+}
+
+.education-container .education-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.education-container .education-content {
+  display: flex;
+  justify-content: center;
+}
+
+.education-container .education-card {
+  background: #ffffff;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 450px;
+  width: 90%;
+  text-align: center;
+}
+
+.education-container .education-institute {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.education-container .education-field {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 5px;
+}
+
+.education-container .education-time {
+  font-size: 14px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.education-container .education-grade {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.education-container .certificate-button {
+  margin-top: 10px;
+  background-color: black;
+  font-weight: bold;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+body.dark-mode .education-container .education-card {
+  background: #1e293b;
+  color: white;
+}
+
+body.dark-mode .education-container .education-field,
+body.dark-mode .education-container .education-time {
+  color: #ccc;
+}

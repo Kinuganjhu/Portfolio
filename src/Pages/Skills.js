@@ -1,27 +1,39 @@
-import Html from '../Icons/Html.svg';
-import Css from '../Icons/Css.svg';
-import Javascript from '../Icons/Javascript.svg';
-import Bootstrap from '../Icons/Bootstrap.svg';
-import ReactIcon from '../Icons/React.svg';
-import Sass from '../Icons/Sass.svg';
-import Firebase from '../Icons/Firebase.svg';
-import Git from '../Icons/Git.svg'; 
-export default function Skills() {
+import { Container, Row, Col } from "react-bootstrap";
+import HtmlIcon from "../Icons/Html.svg";
+import CssIcon from "../Icons/Css.svg";
+import JsIcon from "../Icons/Javascript.svg";
+import SassIcon from "../Icons/Sass.svg";
+import ReactIcon from "../Icons/React.svg";
+import FirebaseIcon from "../Icons/Firebase.svg";
+import GitIcon from "../Icons/Git.svg";
+import BootstrapIcon from "../Icons/Bootstrap.svg"; // Added missing import
+import "../Styles/Skills.scss";
+
+const Skills = () => {
+  const skills = [
+    { icon: HtmlIcon, name: "HTML" },
+    { icon: CssIcon, name: "CSS" },
+    { icon: JsIcon, name: "JavaScript" },
+    { icon: SassIcon, name: "Sass" },
+    { icon: ReactIcon, name: "React" },
+    { icon: FirebaseIcon, name: "Firebase" },
+    { icon: GitIcon, name: "Git" },
+    { icon: BootstrapIcon, name: "Bootstrap" }, // Added Bootstrap to the list
+  ];
+
   return (
-    <>
-      <h3 className='Skills'>Skills</h3>
-    <div className="skills-grid">
-      <img src={Html} alt="HTML" />
-      <img src={Css} alt="CSS" />
-      <img src={Javascript} alt="JavaScript" />
-      <img src={Bootstrap} alt="Bootstrap" />
-      <img src={ReactIcon} alt="React" />
-      <img src={Sass} alt="Sass" />
-      <img src={Firebase} alt="Firebase" />
-      <img src={Git} alt="Git" />
-      
-      <div className="placeholder"></div>
-    </div>
-    </>
+    <Container className="skills-container">
+      <h2 className="skills-title">Skills</h2>
+      <Row className="justify-content-center">
+        {skills.map((skill, index) => (
+          <Col key={index} xs={4} md={4} className="skill-card">
+            <img src={skill.icon} alt={skill.name} className="skill-icon" />
+            <p className="skill-name">{skill.name}</p>
+          </Col>
+        ))}
+      </Row>
+    </Container>
   );
-}
+};
+
+export default Skills;
