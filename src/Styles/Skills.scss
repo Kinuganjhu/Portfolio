@@ -4,45 +4,49 @@
   margin-top: 20px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
-}
+  padding: 20px;
 
-.skills-title {
-  font-size: 24px;
-  font-weight: bold;
-  margin-bottom: 20px;
-}
-
-.skill-card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 15px;
-  transition: transform 0.3s ease-in-out;
-
-  &:hover {
-    transform: scale(1.1);
+  .skills-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
   }
-}
 
-.skill-icon {
-  width: 60px;
-  height: 60px;
-  margin-bottom: 10px;
-  border: 2px solid #000; // Default border for light mode
-  border-radius: 10px;
-  padding: 10px;
-  background-color: #fff;
-}
-
-// Dark Mode
-.dark-mode {
   .skill-card {
-    background-color: #0f172a;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    transition: transform 0.3s ease-in-out;
+
+    &:hover {
+      transform: scale(1.1);
+    }
   }
 
   .skill-icon {
-    border: 2px solid #fff; // White border in dark mode
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+    border: 2px solid #000; // Light mode border
+    border-radius: 10px;
+    padding: 10px;
     background-color: #fff;
-    filter: brightness(1.8); // Ensures icons stay white
+  }
+
+  // Dark Mode Styles
+  body.dark-mode & {
+    background: #1e293b; // Dark background for skills container
+    color: #fff;
+
+    .skill-card {
+      background-color: #0f172a;
+    }
+
+    .skill-icon {
+      border: 2px solid #fff;
+      background-color: #fff;
+      filter: brightness(1.8); // Fix applied here
+    }
   }
 }
