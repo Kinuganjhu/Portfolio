@@ -6,9 +6,9 @@ import SassIcon from "../Icons/Sass.svg";
 import ReactIcon from "../Icons/React.svg";
 import FirebaseIcon from "../Icons/Firebase.svg";
 import GitIcon from "../Icons/Git.svg";
-import BootstrapIcon from "../Icons/Bootstrap.svg"; // Added missing import
+import BootstrapIcon from "../Icons/Bootstrap.svg";
+import PythonIcon from "../Icons/Python.svg";
 import "../Styles/Skills.scss";
-
 const Skills = () => {
   const skills = [
     { icon: HtmlIcon, name: "HTML" },
@@ -18,7 +18,11 @@ const Skills = () => {
     { icon: ReactIcon, name: "React" },
     { icon: FirebaseIcon, name: "Firebase" },
     { icon: GitIcon, name: "Git" },
-    { icon: BootstrapIcon, name: "Bootstrap" }, // Added Bootstrap to the list
+    { icon: BootstrapIcon, name: "Bootstrap" }, 
+    {
+      icon: PythonIcon,
+      name: "Python"
+    }
   ];
 
   return (
