@@ -25,7 +25,7 @@ const Home = () => {
         <h2>Hi, I'm Kinu Ganjhu</h2>
         <p>Aspiring Frontend Developer | Open to New Opportunities & Internships</p>
         <a 
-          href="https://drive.google.com/file/d/15WeIKakF3cHZ8H-0Q3BkB6buNqz18tCP/view?usp=drivesdk" 
+          href="https://drive.google.com/file/d/15t2aK5nUjjcISxhsDoobp3K6Jp57bajj/view?usp=drivesdk" 
           target="_blank" 
           rel="noopener noreferrer" 
           className="cv-button"
